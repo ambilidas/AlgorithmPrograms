@@ -13,8 +13,9 @@ namespace AlgorithmPrograms
 
             do
             {
-                Console.WriteLine("1: Program for returning all the permutations of a string");
+                Console.WriteLine("\n1: Program for returning all the permutations of a string");
                 Console.WriteLine("6: Program for checking whether 2 strings are Anagram or not");
+                Console.WriteLine("7: Take a range of 0 - 1000 Numbers and find the Prime numbers in that range");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -38,6 +39,9 @@ namespace AlgorithmPrograms
                         {
                             Console.WriteLine("Words are not Anagram!!");
                         }
+                        break;
+                     case 7:
+                        PrimeNumber.PrimeNumbersInRange();
                         break;
                 }
             }
