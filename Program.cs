@@ -29,6 +29,7 @@ namespace AlgorithmPrograms
                         PermutationsOfGivenString.Permute(str, 0, strlength - 1);
                         break;
                      case 2:
+                        BinarySearch.SearchFromList();
                         break;
                      case 3:
                         string[] colors = { "blue", "green", "yellow", "orange" };
