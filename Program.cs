@@ -15,6 +15,7 @@ namespace AlgorithmPrograms
             {
                 Console.WriteLine("\n1: Program for returning all the permutations of a string");
                 Console.WriteLine("2: Binary search a word from Word list");
+                Console.WriteLine("4: Bubble Sort");
                 Console.WriteLine("6: Program for checking whether 2 strings are Anagram or not");
                 Console.WriteLine("7: Take a range of 0 - 1000 Numbers and find the Prime numbers in that range");
                 Console.WriteLine("8: Extend the above program to find the prime numbers that are Anagram and Palindrome");
@@ -26,8 +27,12 @@ namespace AlgorithmPrograms
                         int strlength = str.Length;
                         PermutationsOfGivenString.Permute(str, 0, strlength - 1);
                         break;
-                     case 2:
-
+                     case 4:
+                        int[] arr = { 50, 20, 70, 60, 30, 40 };
+                        Bubble.bubbleSort(arr);
+                        Console.WriteLine("Sorted array\n");
+                        Bubble.printIt(arr);
+                        break;
                      case 6:
                         string firststring,secondstring;
                         Console.WriteLine("Enter first string");
