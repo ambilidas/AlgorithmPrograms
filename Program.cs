@@ -14,16 +14,20 @@ namespace AlgorithmPrograms
             do
             {
                 Console.WriteLine("\n1: Program for returning all the permutations of a string");
+                Console.WriteLine("2: Binary search a word from Word list");
                 Console.WriteLine("6: Program for checking whether 2 strings are Anagram or not");
                 Console.WriteLine("7: Take a range of 0 - 1000 Numbers and find the Prime numbers in that range");
+                Console.WriteLine("8: Extend the above program to find the prime numbers that are Anagram and Palindrome");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
-                    case 1:
+                     case 1:
                         string str = "ABCD";
                         int strlength = str.Length;
                         PermutationsOfGivenString.Permute(str, 0, strlength - 1);
                         break;
+                     case 2:
+
                      case 6:
                         string firststring,secondstring;
                         Console.WriteLine("Enter first string");
@@ -42,6 +46,9 @@ namespace AlgorithmPrograms
                         break;
                      case 7:
                         PrimeNumber.PrimeNumbersInRange();
+                        break;
+                    case 8:
+                        PrimeNumberWhichIsAnagramandPalindrome.PrimeNumbers();
                         break;
                 }
             }

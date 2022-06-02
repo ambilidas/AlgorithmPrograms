@@ -12,11 +12,11 @@ namespace AlgorithmPrograms
         {
             int num;
             int startNum = 0;
-            int endNum = 1000;
+            int endNum = 1000; int sum=0;int c;
             Console.WriteLine("The Prime Numbers between 0 and 1000 are:\n");
             for (num = startNum; num <= endNum; num++)
             {
-               bool test=false;
+                bool test = false;
 
                 for (int i = 2; i <= num / 2; i++)
                 {
@@ -30,7 +30,12 @@ namespace AlgorithmPrograms
                 if (test == false)
                     Console.Write("{0} ", num);
             }
-            Console.WriteLine("\n");
+              Console.WriteLine("\n");
+
+           
+
         }
+           
+        
     }
 }
